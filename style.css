@@ -1,0 +1,262 @@
+/* 🌸 Gaya Umum */
+body {
+font-family: "Poppins", sans-serif;
+margin: 0;
+background-color: #f6f2f7;
+color: #4b4453;
+animation: slideIn 0.8s ease;
+}
+
+/* ✨ Header */
+header {
+background-color: #bfa2db;
+color: white;
+padding: 20px;
+text-align: center;
+box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+position: sticky;
+top: 0;
+z-index: 1000;
+animation: slideUp 0.8s ease;
+}
+
+nav {
+margin-top: 10px;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+margin: 0 10px;
+padding: 8px 15px;
+border-radius: 20px;
+transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+nav a:hover, nav a.active {
+background-color: #d6b4fc;
+color: #4b2e83;
+transform: translateY(-2px);
+}
+
+/* 📦 Konten */
+section.content {
+max-width: 900px;
+background-color: #fff;
+margin: 50px auto;
+padding: 30px;
+border-radius: 15px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+animation: slideUp 1s ease;
+}
+
+h1, h2 {
+color: #4b2e83;
+margin-top: 0;
+animation: slideUp 1s ease;
+}
+
+/* 📋 Daftar Struktur */
+ul {
+list-style: none;
+padding: 0;
+animation: slideUp 1s ease;
+}
+
+li {
+background-color: #f2e6ff;
+margin: 8px 0;
+padding: 10px 15px;
+border-radius: 10px;
+transition: transform 0.2s, box-shadow 0.2s;
+animation: slideUp 0.9s ease;
+}
+
+li:hover {
+transform: translateX(5px);
+box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* 📅 Tabel */
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 15px;
+border-radius: 10px;
+overflow: hidden;
+animation: slideUp 1s ease;
+}
+
+th, td {
+border: 1px solid #d1c4e9;
+padding: 12px;
+text-align: center;
+}
+
+th {
+background-color: #cdb4db;
+color: #fff;
+font-weight: 600;
+}
+
+td {
+background-color: #f8f0ff;
+}
+
+tr:hover td {
+background-color: #e7d8f7;
+}
+
+/* 🧑‍🎓 Galeri Anggota Kelas */
+.grid-container {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+gap: 20px;
+justify-items: center;
+margin-top: 30px;
+animation: slideUp 1s ease;
+}
+
+.card {
+background-color: #fff8f2;
+border: 2px solid #4b2e83;
+border-radius: 15px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+overflow: hidden;
+text-align: center;
+transition: transform 0.3s, box-shadow 0.3s;
+padding-bottom: 10px;
+width: 160px;
+animation: slideUp 1s ease;
+}
+
+.card:hover {
+transform: translateY(-5px);
+box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.card img {
+width: 120px;
+height: 160px;
+object-fit: cover;
+border-radius: 10px;
+border: 2px solid #bfa2db;
+margin-top: 10px;
+}
+
+.card .info {
+padding: 8px;
+}
+
+.card h4 {
+font-size: 13px;
+margin: 8px 0 4px;
+color: #5b4636;
+}
+
+.badge {
+display: inline-block;
+font-size: 12px;
+padding: 4px 8px;
+border-radius: 8px;
+color: white;
+}
+
+.badge.p,
+.badge.l {
+background-color: #bfa2db;
+}
+
+/* 👩‍🏫 Guru Pengajar */
+.teacher-section {
+background-color: #f7f2fb;
+padding: 50px 20px;
+border-radius: 15px;
+margin: 40px auto;
+max-width: 950px;
+text-align: center;
+box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+animation: slideUp 1s ease;
+}
+
+.teacher-section h2 {
+color: #4b2e83;
+font-size: 26px;
+margin-bottom: 25px;
+animation: slideUp 1s ease 0.2s both;
+}
+
+.teacher-table {
+width: 100%;
+border-collapse: collapse;
+margin: 0 auto;
+border-radius: 10px;
+overflow: hidden;
+box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+animation: slideUp 1s ease 0.4s both;
+}
+
+.teacher-table th {
+background-color: #bfa2db;
+color: white;
+padding: 12px;
+font-weight: 600;
+letter-spacing: 0.5px;
+}
+
+.teacher-table td {
+background-color: #f8f4ff;
+padding: 10px;
+color: #4b4453;
+border: 1px solid #e1d4f5;
+}
+
+.teacher-table tr:nth-child(even) td {
+background-color: #f1e8ff;
+}
+
+.teacher-table tr:hover td {
+background-color: #e4d6fa;
+transition: 0.3s;
+}
+
+/* 🌙 Footer */
+footer {
+text-align: center;
+padding: 15px;
+background-color: #bfa2db;
+color: white;
+margin-top: 40px;
+font-size: 14px;
+letter-spacing: 0.5px;
+animation: slideUp 1s ease;
+}
+
+/* 🌈 Animasi */
+@keyframes slideIn {
+from {
+opacity: 0;
+transform: translateY(-25px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+@keyframes slideUp {
+from {
+opacity: 0;
+transform: translateY(25px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+/* ✨ Animasi Fade In */
+@keyframes fadeIn {
+from { opacity: 0; transform: translateY(20px); }
+to { opacity: 1; transform: translateY(0); }
+}
